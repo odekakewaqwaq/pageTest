@@ -17,7 +17,7 @@ function setup(){
 }
 
 function draw(){
-  background('skyblue')
+  background('pink')
   
   //ドラッグ中の場合
   if(mouseIsPressed == true){
