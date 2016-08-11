@@ -4,7 +4,7 @@ var x,y;
 //円の座標とマウス座標の差分（ずれ）の変数
 var dx,dy;
 //ドラッグ開始終了のフラグを用意
-//boolean startDrag;
+var startDrag = false;
 //円の半径
 var r=30;
 
@@ -21,9 +21,11 @@ function draw(){
   
   //ドラッグ中の場合
   if(mouseIsPressed == true){
+      if(startDrag == true){
     //マウス座標に差分を加えた値を円の座標に代入
-    x=mouseX+dx;
-    y=mouseY+dy;
+        x=mouseX+dx;
+        y=mouseY+dy;
+      }
   }
 
   //円を描画する
